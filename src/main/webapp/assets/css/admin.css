@@ -1,0 +1,61 @@
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #F9FAFB;
+  color: #1F2937;
+}
+
+.navbar-admin {
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #E5E7EB;
+  padding: 0.6rem 0;
+}
+
+.navbar-admin img {
+  width: 120px;
+  height: auto;
+}
+
+.navbar-admin .badge-admin {
+  background-color: #22C55E;
+  color: #FFFFFF;
+  font-weight: 600;
+  border-radius: 999px;
+  padding: 0.35rem 0.85rem;
+  font-size: 0.85rem;
+}
+
+.btn-klicalia {
+  background-color: #22C55E;
+  border-color: #22C55E;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+.btn-klicalia:hover {
+  background-color: #16A34A;
+  border-color: #16A34A;
+  color: #FFFFFF;
+}
+
+.btn-outline-klicalia {
+  border-color: #22C55E;
+  color: #16A34A;
+  font-weight: 600;
+}
+
+.btn-outline-klicalia:hover {
+  background-color: #22C55E;
+  color: #FFFFFF;
+}
+
+.card-panel {
+  background-color: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 16px;
+  padding: 1.5rem;
+}
+
+.table thead {
+  background-color: #F3F4F6;
+}

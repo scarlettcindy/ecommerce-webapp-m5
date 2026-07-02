@@ -1,0 +1,25 @@
+-- ============================================================
+-- Klicalia | ecommerce_Klicalia
+-- Datos de prueba para el ecommerce (Admin de productos)
+-- Son los mismos talleres usados en la app de consola de la etapa anterior,
+-- para mantener el catálogo consistente en todo el portafolio.
+-- Ejecutar después de schema.sql
+-- ============================================================
+
+INSERT INTO categorias (nombre, descripcion) VALUES
+    ('Idiomas',        'Talleres de inglés para niños y niñas'),
+    ('Arte',            'Talleres de expresión artística y creatividad'),
+    ('Matemáticas',      'Talleres de razonamiento lógico-matemático'),
+    ('Lectoescritura',   'Talleres de iniciación a la lectura y escritura');
+
+INSERT INTO productos (id_categoria, nombre, descripcion, precio, activo) VALUES
+    ((SELECT id_categoria FROM categorias WHERE nombre = 'Idiomas'),
+        'Inglés Básico', 'Taller introductorio de inglés para niños.', 5990, TRUE),
+    ((SELECT id_categoria FROM categorias WHERE nombre = 'Idiomas'),
+        'Inglés Intermedio', 'Taller de inglés para niños con nociones previas.', 7990, TRUE),
+    ((SELECT id_categoria FROM categorias WHERE nombre = 'Arte'),
+        'Arte para Niños', 'Taller de pintura, dibujo y manualidades.', 4990, TRUE),
+    ((SELECT id_categoria FROM categorias WHERE nombre = 'Matemáticas'),
+        'Matemáticas Divertidas', 'Taller de lógica y matemáticas con juegos.', 6990, TRUE),
+    ((SELECT id_categoria FROM categorias WHERE nombre = 'Lectoescritura'),
+        'Lectoescritura Inicial', 'Taller de iniciación a la lectura y escritura.', 5990, TRUE);
